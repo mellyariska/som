@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 # ============================
 # 1. BACA DATA NETCDF
 # ============================
-file_path = "monthly_rr_0.25deg_reg_v2.0_saobs.nc"  # Ganti sesuai lokasi file kamu
+file_path = "data_kompres.nc"  # Ganti sesuai lokasi file kamu
 ds = xr.open_dataset(file_path)
 print("Dataset loaded. Time range:", str(ds['time'].values[0]), "to", str(ds['time'].values[-1]))
 
@@ -198,3 +198,4 @@ for cid in top_clusters:
     plt.show()
 
 print("Selesai. File keluaran: som_clusters_grid.csv, cluster_stats.csv")
+
