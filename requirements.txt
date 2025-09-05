@@ -1,0 +1,10 @@
+streamlit
+numpy
+pandas
+matplotlib
+seaborn
+cartopy
+geopandas
+xarray
+minisom
+scikit-learn
