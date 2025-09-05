@@ -38,8 +38,8 @@ if uploaded_file is not None:
             st.stop()
         
         # Ambil data numpy
-        lats = clim["lat"].values
-        lons = clim["lon"].values
+        lats = clim["latitude"].values
+        lons = clim["longitude"].values
         data = clim.values  # shape: (12, lat, lon)
         
         # Buat grid flatten
@@ -152,3 +152,4 @@ if uploaded_file is not None:
     
     except Exception as e:
         st.error(f"Terjadi kesalahan: {e}")
+
