@@ -18,8 +18,8 @@ st.title("🌧️ SOM Clustering untuk Data Curah Hujan (NetCDF)")
 # -------------------------
 def pick_coord_names(ds):
     # kemungkinan nama: 'lat'/'lon' atau 'latitude'/'longitude'
-    lat_names = ['lat', 'latitude', 'y']
-    lon_names = ['lon', 'longitude', 'x']
+    lat_names = ['latitude', 'latitude', 'y']
+    lon_names = ['longitude', 'longitude', 'x']
     lat_name = next((n for n in lat_names if n in ds.coords), None)
     lon_name = next((n for n in lon_names if n in ds.coords), None)
     return lat_name, lon_name
@@ -224,4 +224,5 @@ if st.button("Latih SOM & Tampilkan Hasil"):
         st.pyplot(figp)
 
     st.success("Analisis selesai. Unduh CSV untuk rincian per-grid.")
+
 
