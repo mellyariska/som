@@ -1,10 +1,10 @@
 streamlit
+plotly
+xarray
 numpy
 pandas
-matplotlib
-seaborn
-cartopy
-geopandas
-xarray
-minisom
+scipy
 scikit-learn
+matplotlib
+
+
