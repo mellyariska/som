@@ -1,10 +1,12 @@
 streamlit
-plotly
 xarray
+netCDF4
 numpy
 pandas
 scipy
 scikit-learn
+plotly
 matplotlib
+
 
 
